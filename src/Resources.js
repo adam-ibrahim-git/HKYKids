@@ -9,8 +9,7 @@ function Resources(props) {
     let uniqueTitles = []
 
     const storedIds = JSON.parse(localStorage.getItem('ids')) || [];
-    const [ids, setIds] = useState(storedIds)
-
+    const [ids, setIds] = useState(storedIds);
     useEffect(() => {
         
         localStorage.setItem('ids', JSON.stringify(ids));
@@ -92,8 +91,8 @@ function Resources(props) {
                                                         : null}
                                                     {Object.hasOwn(filteredItem, 'links') ?
                                                         <span className="siteLink">
-                                                            { <button onClick={() =>handleShare(filteredItem.sectionTitle || '','Resource I found !',filteredItem?.links?.[0]?.link || window.location.href)}>
-                                                                <img src="../imgs/share.png" alt="Share" /></button>}
+                                                            { <button onClick={() =>handleShare(filteredItem.sectionTitle || '','',filteredItem?.links?.[0]?.link || window.location.href)}>
+                                                                <img src="../imgs/share.png" alt="Share" /></button>} {/*the image is a random share icon, will change the icon and alt later*/}
                                                         </span> : null}
                                                         <span className="bookmarks"><button onClick={() => UpdateStorage(filteredItem.gid)}><img src="../imgs/bookmark.png"/></button></span>
 
