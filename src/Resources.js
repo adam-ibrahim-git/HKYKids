@@ -10,7 +10,7 @@ function Resources(props) {
 
     const storedIds = JSON.parse(localStorage.getItem('ids')) || [];
     const [ids, setIds] = useState(storedIds)
-  
+
     useEffect(() => {
         
         localStorage.setItem('ids', JSON.stringify(ids));
@@ -39,7 +39,23 @@ function Resources(props) {
         gid = ''
     }
 }
-
+    const handleShare = async (title, text, url) => {
+        if (navigator.share) {
+        try {
+            await navigator.share({
+            title,
+            text,
+            url,
+            });
+            console.log("Shared successfully!");
+        } catch (error) {
+            console.error("Error sharing:", error);
+        }
+        } else {
+        alert("Sharing is not supported in this browser.");
+        }
+    };
+  
 
 
     console.log("uniqueTitles", uniqueTitles)
@@ -76,7 +92,8 @@ function Resources(props) {
                                                         : null}
                                                     {Object.hasOwn(filteredItem, 'links') ?
                                                         <span className="siteLink">
-                                                            {<a href={filteredItem.links[0].link}><button target="_blank">{/* share image */}</button></a>}
+                                                            { <button onClick={() =>handleShare(filteredItem.sectionTitle || '','Resource I found !',filteredItem?.links?.[0]?.link || window.location.href)}>
+                                                                <img src="../imgs/share.png" alt="Share" /></button>}
                                                         </span> : null}
                                                         <span className="bookmarks"><button onClick={() => UpdateStorage(filteredItem.gid)}><img src="../imgs/bookmark.png"/></button></span>
 
