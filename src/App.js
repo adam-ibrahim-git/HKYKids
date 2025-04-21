@@ -3,6 +3,7 @@ import { Route, Routes} from "react-router-dom";
 import Bookmarks from './Bookmarks.js';
 import Resources from './Resources.js';
 import Header from './Header.js';
+import RouterPage from './RouterPage.js';
 
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
         <Route path ="/other" element ={<Resources data = {kykidsData} sectionIds = {otherSectionIds} headerText="Other" />} />
         
         <Route path ="/donate" element ={<Resources data = {kykidsData} sectionIds = {donateSectionIds} headerText="Donate" />} />
+
+        <Route path ="/page/:programId" element = {<RouterPage data = {kykidsData} headerText= "More" />} />
+
+        <Route path ="/test/" element = {<RouterPage data = {kykidsData} />} />
         
 
         <Route path ="*" element ={<Header name="Page Not Found" />} />
@@ -68,14 +73,3 @@ function App() {
 }
 
 export default App;
-
-/* Finished:
-
-<Header />
-<Home />
-<Other />
-
-To work on:
-<Activities data = {kykidsData} sectionIds = {programSectionIds}  />
-<Menu />
-*/

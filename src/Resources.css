@@ -1,38 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .splitResources {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     .oneProgram, .onlyText {
         display: flex;
         flex-direction: column-reverse;
-        margin: 30px;
-        border-radius: 10%;
+        max-width: 350px;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 30px;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         transition: 200ms ease-in-out;
-        min-width:350px;
-        max-width: 550px;
-
-        background-color: rgb(255, 200, 221);
-
+        background-color: var(--lightPink);
+        align-content: space-between;
 
         .text {
-            display: flex;
             flex-direction: column;
-            width:350px;
-            font-size: larger;
-            border-radius: 25%;
-            padding:5%;
+
+            /*heres the width problem with resources*/
+           
+            /* Extraneous padding - padding: 0 5%; */
             text-align: center;
             p {
-                color: #07020D;
-                font-family: "DynaPuff";
-                line-height: 50px;
-                font-weight: lighter;
-                font-size: larger;
+                color: var(--standardBlack);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 25px;
+                padding: 0 5vw;
+                /* font-weight: lighter;
+                font-size: larger; */
             }
         }
 
@@ -49,18 +49,21 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap:10px;
+            max-width: 75%;
+            
+            /* gap:100px; */
             
             button {
-                background-color: #ffffff;
+                background-color: var(--white);
                 min-height: 50px;
-                margin: 5% 15%;
+                margin: 5px;
+                max-width: 200px;
                 padding:10px;
                 border-radius: 8px;
                 font-weight: bold;
-                font-size: large;
-                font-family: 'Times New Roman', Times, serif;
-                transition: 150ms ease-in-out;                
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                transition: 150ms ease-in-out;   
+                border-width: 0px;          
             }
         }
 
@@ -71,14 +74,14 @@
             margin: 10px;
             margin-right: 25px;
             
-
             button{
-                border-radius: 100%;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                border-radius: 100%;
+                border-width: 0px;
+                /* align-items: center;
+                justify-content: center; */
 
-                background-color: #FDFD96;                
+                background-color: var(--yellow);                
             }
             img{
                 width: 20px;
@@ -92,67 +95,107 @@
         
     }
     .oneProgram:nth-child(even), .clickedOneProgram:nth-child(even) {
-        background-color: #CDB4DB;
+        background-color: var(--lightBlue);
     }
 
 }
 
 .links button:hover, .bookmarks button:hover {
-    scale: 1.1;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    scale: 1.02;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
 }
 
 .oneProgram:hover {
-    background-color: #A2D2FF;
-    scale: 1.05;
-    border-radius: 5%;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: var(--lightBlue);
+    /* scale: 1.02; */
+    border-radius: 30px;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
 }
 .oneProgram:nth-child(even):hover {
-    background-color: #A2D2FF;
-    scale: 1.05;
-    border-radius: 5%;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: var(--lightPink);
+    /* scale: 1.02; */
+    border-radius: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
 }
 
 
 .uniqueTitle {
     width: 100%;
-    height: 350px;
-    border-radius: 5%;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding: 3% 20px;
 
-    background-image: url(../public/imgs/familyOutdoors.jpg);
+    background-image: url(https://i.imgur.com/sNbZi4g.png); /* Hosting this on Imgur for now - more secure host later */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
+    background-position: center;
+    color: var(--white);
+    text-shadow: 0 0 15px var(--standardBlack);
     text-align: center;
-    font-size:100px;
+
+    font-family: "Pacifico";
+    font-size: 40px;
+
 }
 
 .splitResources .onlyText {
     width:90%;
     max-width: 90%;
-    margin-left: 5%;
     
+    /* font-size: 2vw; */
 
     .text{
-        
         width:90%;
-        font-size: 40px;
+        
         p{
-            line-height: 80px;
-            font-family: 'Times New Roman', Times, serif;
+            line-height:normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             transition: 400ms ease-in-out;        
-            border-radius: 20px;
         }
     }
 
-    .text p:hover{
-        scale: 1.05;
+   
+
+}
+@media screen and (max-width: 530px){
+  
+    .uniqueTitle {
+        font-size: 10vw;
+        padding: 10% 20px;
+        /* padding-top: 10%;
+        padding-bottom: 20%; */
     }
+    .splitResources .onlyText {
+        font-size: 6vw;
+    }
+
+    .splitResources .oneProgram {
+        max-width: 95%;
+        margin: 15px;
+        padding: 5px;
+        .links {
+            max-width: none;
+            button {
+                max-width: 125px;
+            }
+        }
+        .text {
+            width: 75%;
+        }
+        img {
+            height: 50vw;
+            width: 50vw;
+        }
+    }
+}
+
+
+.cardContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
 }

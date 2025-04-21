@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'; 
+import React from 'react'; 
 import Menu from './Menu.js';
 import './Header.css';
 
@@ -9,7 +9,7 @@ function Header(props){
     <div className="Header">
         <div className="menu">{<Menu />}</div>
         <div className="topBar"> 
-        <a href="/" className="logoLink"><img src="../imgs/HeartofKYWebLogo.png" className='logoImg'/></a>
+        <a href="/" className="logoLink"><img src="../imgs/HKYKIDSLOGO.png" className='logoImg'/></a>
         </div>
 
         <h1>{props.name}</h1>

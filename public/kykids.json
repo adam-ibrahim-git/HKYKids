@@ -21,40 +21,6 @@
       "video": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/DMeagPEaL6E\" title=\"@imaginationlibrary Announces Statewide Expansion in Kentucky\" width=\"464\"></iframe>"
     },
     {
-      "sectionId": "programs",
-      "sectionTitle": "Resources Sent to the Home",
-      "gid": "ready4k",
-      "logo": "imgs/ParentPowered-logo-220x205.png",
-      "title": "Parent Powered",
-      "links": [
-        {
-          "link": "https://www.hkykids.org/signup/danville-ready4k",
-          "text": "Danville City Schools"
-        },
-        {
-          "link": "https://www.hkykids.org/signup/boyle-ready4k",
-          "text": "Boyle County Schools"
-        },
-        {
-          "link": "https://www.hkykids.org/signup/mercer-ready4k",
-          "text": "Mercer County Schools"
-        },
-        {
-          "link": "https://www.hkykids.org/signup/burgin-ready4k",
-          "text": "Burgin City Schools"
-        },
-        {
-          "link": "https://www.hkykids.org/signup/hkykids-ready4k",
-          "text": "Other School Districts"
-        }
-      ],
-      "description": [
-        "ParentPowered Family Engagement Programs help districts, community organizations, and schools strengthen partnerships with families and caregivers from grade 12 to improve student engagement, attendance, academics, and mental health",
-        "Please select the school district associated with your residential address--even if this is not the school you attend or intend to attend."
-      ],
-      "video": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"714\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/HVb7yfI0HT4\" title=\"Introducing ParentPowered\" width=\"1255\"></iframe>"
-    },
-    {
       "sectionId": "AtHome",
       "sectionTitle": "At Home Activities",
       "gid": "LearnKY",
@@ -335,10 +301,10 @@
     },
     {
       "sectionId": "childcare",
-      "sectionTitle": "Why is a high-quality early learning program important?",
+      "sectionTitle": "High-quality early learning programs",
       "gid": "whyChildcare",
       "logo": "imgs/lookFor.png",
-      "title": "Why is a high-quality early learning program important?",
+      "title": "High-quality early learning programs",
       "links": [
         {
           "link": "https://www.childcareawareky.org/wp-content/uploads/2020/04/Examples-of-what-to-look-for-in-Child-Care-setting_3.16.20.pdf",
@@ -351,7 +317,7 @@
     },
     {
       "sectionId": "childcare",
-      "sectionTitle": "Why is a high-quality early learning program important?",
+      "sectionTitle": "High-quality early learning programs",
       "gid": "choseChildcare",
       "logo": "imgs/cropped-Child-Care-Aware-of-Kentucky-1.gif",
       "title": "Need help choosing the right care for your child?",
@@ -361,7 +327,7 @@
     },
     {
       "sectionId": "childcare",
-      "sectionTitle": "Why is a high-quality early learning program important?",
+      "sectionTitle": "High-quality early learning programs",
       "gid": "childcareBenefits",
       "logo": "imgs/kynectBenefitsLogoRGB.png",
       "title": "Are you eligible for help covering the cost of childcare?",

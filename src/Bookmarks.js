@@ -35,6 +35,7 @@ function Bookmarks(props) {
     return (
         <div className="Resources">
             <Header name={props.headerText} />
+            <div className = "cardContainer">
             <div class="splitResources">
                 {ids.map((gid, index) => (
                     <>
@@ -75,7 +76,7 @@ function Bookmarks(props) {
                     </>
                 )
                 )}
-
+                </div>
             </div>
         </div>
     );

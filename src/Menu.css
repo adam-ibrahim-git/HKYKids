@@ -1,11 +1,11 @@
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0px;
     position: fixed; 
     z-index: 1; 
     top: 0; 
     right: 0;
-    background-color: #CDB4DB; 
+    background-color: var(--darkPink); 
     overflow-x: hidden; 
     padding-top: 60px;
     transition: 0.5s;
@@ -22,19 +22,20 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: var(--white);
     display: block;
     transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 
   }
   .sidenav p {
-    color: #818181
+    color: var(--lightPink);
   }
 
   
   .sidenav a:hover {
-    color: #BDE0FE;
+    color: var(--lightBlue);
   }
   
   .sidenav .closebtn {
@@ -48,24 +49,26 @@
     position:fixed;
     right:0px;
     top:0px;
-    color: #F1E9DB;
   
-    background-color: #CDB4DB;
+    /* background-color: #CDB4DB; */
     border-radius: 10px;
     font-size: 60px;
     text-align: center;
 
-    color: white;
+    /* color: var(--lightPink); */
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 7px 20px;
     transition: 150ms ease-in-out;
+    z-index: 1;
   }
 
   .menuButton:hover{
     scale: 1.1;
-    background-color: #A2D2FF;
-    box-shadow: 5px 3px 3px 3px black;
+    /* background-color: ; */
+    /* color:var(--lightBlue) !important;  */
+    cursor: pointer;
+    /* box-shadow: 5px 3px 3px 3px black; */
   }
 
   #mySidenav > a.menuDonate {
@@ -73,5 +76,10 @@
     bottom: 80px;
     font-weight: bolder;
     font-size: 40px;
+  }
+
+  .mySidenav{
+    width: 0px;
+
   }
   
