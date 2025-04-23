@@ -29,6 +29,7 @@ function Resources(props) {
 
 
   const UpdateStorage = (gid) => {
+    toggleBookmarks();
     let exists = false;
     for (let id of ids) {
         if (gid == id) {
@@ -40,7 +41,19 @@ function Resources(props) {
         setIds([...ids, gid])
         gid = ''
     }
-}
+}   
+
+const [bookmarkIcon, setBookmarkIcon] = useState('../imgs/bookmarkButton.svg');
+
+function toggleBookmarks() {
+    setBookmarkIcon(bookmarkIcon === '../imgs/bookmarkButton.svg' ? '../imgs/bookmarkButtonClicked.svg' : '../imgs/bookmarkButton.svg');
+    console.log(bookmarkIcon);
+    if (bookmarkIcon == '../imgs/bookmarkButton.svg'){
+      bookmarkIcon = '../imgs/bookmarkButtonClicked.svg';
+    } else {
+        bookmarkIcon = '../imgs/bookmarkButton.svg';
+    }
+  }
 
 
 
@@ -86,7 +99,7 @@ function Resources(props) {
                                                     <span className="shareLink">
                                                         <a href={"#/page/" + filteredItem.gid}><button target="_blank">{<img className = "smallButtonSVG" src = '../imgs/infoButton.svg'></img>}</button></a>
                                                     </span>
-                                                    <span className="bookmarks"><button onClick={() => UpdateStorage(filteredItem.gid)}>{<img className = "smallButtonSVG" src = '../imgs/bookmarkButton.svg'></img>}</button></span>
+                                                    <span className="bookmarks"><button onClick={()=> UpdateStorage(filteredItem.gid)}>{<img className = "smallButtonSVG" src = {bookmarkIcon} ></img>}</button></span>
                                                     </span>
                                                     </div> 
                                                 </div>
