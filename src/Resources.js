@@ -48,16 +48,9 @@ const [bookmarkIcon, setBookmarkIcon] = useState('../imgs/bookmarkButton.svg');
 function toggleBookmarks() {
     setBookmarkIcon(bookmarkIcon === '../imgs/bookmarkButton.svg' ? '../imgs/bookmarkButtonClicked.svg' : '../imgs/bookmarkButton.svg');
     console.log(bookmarkIcon);
-    if (bookmarkIcon == '../imgs/bookmarkButton.svg'){
-      bookmarkIcon = '../imgs/bookmarkButtonClicked.svg';
-    } else {
-        bookmarkIcon = '../imgs/bookmarkButton.svg';
-    }
   }
 
-
-
-    console.log("uniqueTitles", uniqueTitles)
+  console.log("uniqueTitles", uniqueTitles)
     console.log("props", props.data)
 
     return (
